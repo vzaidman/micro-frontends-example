@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import Heading from './Heading';
+import MicroApp from './shared/MicroApp';
 
 function App() {
   return (
     <div className="App">
-      <Heading/>
+      <MicroApp name="my-micro-app" url={process.env.MY_MICRO_APP_URL}/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
